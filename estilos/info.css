@@ -1,0 +1,194 @@
+body{
+    background-image: url(../imagenes/fondo-info.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.nave{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    height: auto;
+    font-family: "Bitcount Grid Single", system-ui;
+}
+
+.nave span{
+    display: none;
+    margin-left: 5px;
+}
+
+.nave ul li a:hover span{
+    display: inline;
+}
+
+.nave ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding-left: 0;
+}
+
+.nave ul li a{
+    color: black;
+    text-decoration: none;
+    background-color: #ff9d4e;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 30px;
+}
+
+.nave ul li a:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 30px black;
+    background-color: black;
+    color: white;
+}
+
+.titulo{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.titulo h1{
+    font-family: "Creepster", system-ui;
+    color: black;
+    font-size: 100px;
+    height: auto;
+    margin: 0px;
+}
+
+.fis{
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(115, 195, 207);
+    font-family: "Creepster", system-ui;
+    font-size: 200%;
+    height: 70px;
+}
+
+.fecha{
+    display: flex;
+    align-items: center; /* centra verticalmente */
+    justify-content: space-between; /* separa número y texto dentro del bloque */
+    width: max-content; /* el ancho se ajusta al contenido */
+    margin: 0 auto; /* centra el bloque en la página */
+    gap: 20px; /* espacio entre número y texto */
+    padding: 0;
+    height: 200px;
+}
+
+.fecha .numero,
+.fecha .parrafos {
+    flex: 1; /* cada uno ocupa la misma proporción del contenedor */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.fecha .numero {
+    justify-content: flex-end; /* lo empuja hacia la derecha */
+    font-size: 100px;
+    font-family: "Creepster", system-ui;
+    color: orangered;
+    margin: 10px;
+}
+
+.fecha .parrafos {
+    justify-content: flex-start; /* lo empuja hacia la izquierda */
+    font-family: "Varela Round", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.cierre{
+    background-color: #ff9d4e;
+    width: 40%;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.cierre h1{
+    font-family: "Caprasimo", serif;
+}
+
+.cierre p{
+    font-family: "Montserrat", sans-serif;
+}
+
+.icon {
+    position: fixed;   /* lo fija en la pantalla */
+    bottom: 20px;      /* distancia desde el borde inferior */
+    right: 20px;        /* distancia desde el borde izquierdo */
+    z-index: 1000;     /* para que esté sobre otros elementos */
+}
+
+.icon img {
+    height: 200px;
+    animation: flotar 3s ease-in-out infinite;
+}
+
+@keyframes flotar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/*-----RESPONSIVE-----*/
+
+@media screen and (max-width: 600px){
+    body {
+        background-color: #ff9d4e; /* color base */
+        background-image: 
+            radial-gradient(circle at top left, rgba(255,255,255,0.3) 0%, transparent 80%),
+            radial-gradient(circle at bottom right, rgba(255,255,255,0.2) 0%, transparent 80%);
+        background-repeat: no-repeat;
+        background-size: cover;
+    } 
+    .nave ul{
+        gap: 5px;
+    }
+    .nave ul li a{
+        padding: 5px 10px;
+    }
+    .fecha {
+        flex-direction: column; /* apila número encima del texto */
+        height: auto;           /* altura automática */
+        gap: 10px;              /* espacio entre número y texto */
+        width: 90%;             /* ocupa casi toda la pantalla */
+        margin: 20px auto;      /* centrado horizontal con margen */
+    }
+
+    .fecha .numero {
+        justify-content: center; 
+        font-size: 60px;        /* más pequeño para móviles */
+        margin: 0;
+        height: 100px;
+    }
+
+    .fecha .parrafos {
+        justify-content: center;
+        text-align: center;     /* centrado del texto debajo */
+        font-size: 18px;        /* ajustar tamaño */
+    }
+}

@@ -1,0 +1,330 @@
+body{
+    background-image: url(../imagenes/efrankinstain.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.nave{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    height: auto;
+    font-family: "Bitcount Grid Single", system-ui;
+}
+
+.nave span{
+    display: none;
+    margin-left: 5px;
+}
+
+.nave ul li a:hover span{
+    display: inline;
+}
+
+.nave ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding-left: 0;
+}
+
+.nave ul li a{
+    color: #e5d551;
+    text-decoration: none;
+    background-color: #031c11;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 30px;
+}
+
+.nave ul li a:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 30px #e5d551;
+    background-color: #e5d551;
+    color: black;
+}
+
+.titulo{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.titulo h1{
+    font-family: "Creepster", system-ui;
+    color: #e5d551;
+    font-size: 100px;
+    height: auto;
+    margin: 0px;
+}
+
+#cont{
+    display: flex;
+    margin: 20px;
+    padding: 10px;
+}
+
+#cont .fecha{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+#cont .fecha h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    width: 40%;
+    height: 100%;
+    margin: 5px;
+    color: #e5d551;
+    font-family: "Creepster", system-ui;
+    font-size: 6rem;
+    border-radius: 20px;
+    background-color: #032b1a;
+    box-shadow: 0 0 30px black;
+    transition: 0.3s;
+}
+
+#cont .fecha:hover h1{
+    display: none;
+    transform: scale(1.03);
+}
+
+#cont .fecha:hover span{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    margin: 5px;
+    font-family: "Creepster", system-ui;
+    font-size: 6rem;
+    border-radius: 20px;
+    box-shadow: 0 0 30px black;
+    transition: 0.3s;
+    box-shadow: 0 0 30px #e5d551;
+    background-color: #e5d551;
+    color: black;
+    transform: scale(1.03);
+}
+#cont .fecha:hover span img{
+    height: auto;
+    transform: scale(1.03);
+}
+#cont .fecha:hover span h2{
+    font-size: 2rem;
+    transform: scale(1.03);
+}
+
+#cont span{
+    display: none;
+}
+
+#cont .text{
+    width: 50%;
+    color: #0d2a1a;
+    font-family: "Parkinsans", sans-serif;
+    text-align: center;
+    background-color: #3b5132;
+    border-radius: 20px;
+    box-shadow: 0 0 30px black;
+    transition: 0.3s;
+}
+
+
+#cont .text:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 30px #e5d551;
+    background-color: #e5d551;
+    color: black;
+    transition: 0.3s;
+}
+
+
+
+
+.protocolo{
+    display: block;
+    margin: auto;
+    width: 70%;
+    background-color: #032b1a;
+    border-radius: 20px;
+    padding: 20px;
+    color: #e5d551;
+    box-shadow: 0 0 30px black;
+}
+
+#sec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 10px;
+}
+
+#sec .img{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+#sec .img img{
+    width: 40%;
+}
+
+#sec .text{
+    width: 50%;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Ubuntu Mono", monospace;
+}
+
+.test{
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;
+    background: #2c2c2c;
+    color: #e0e0e0;
+    padding: 30px 25px;
+    border-radius: 8px;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-style: italic;
+    text-align: center;
+    border: 2px solid #5a5a5a;
+    box-shadow: 0 0 30px black;
+    background-image: 
+        linear-gradient(45deg, transparent 95%, #1a1a1a 100%),
+        linear-gradient(-45deg, transparent 95%, #1a1a1a 100%);
+    background-size: 10px 10px;
+    transition: 0.3s;
+}
+
+.test:hover{
+    transform: scale(1.03);
+}
+
+.test p{
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8); /* Sombra para efecto grabado */
+    position: relative;
+    z-index: 2;
+}
+
+.test p span{
+    font-size: 0.9em;
+    color: #8a8a8a; /* Color más desvaído */
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 1px; /* Espaciado tipo grabado */
+    text-transform: uppercase;
+    border-top: 1px solid #5a5a5a;
+    padding-top: 10px;
+    display: inline-block;
+}
+/* 💀 Efecto de palpitación o respiración para las imágenes con id="image" */
+.protocolo #sec .img img {
+    animation: palpitar 2.5s ease-in-out infinite;
+    transform-origin: center;
+}
+
+/* Animación de palpitación */
+@keyframes palpitar {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.icon {
+    position: fixed;   /* lo fija en la pantalla */
+    bottom: 20px;      /* distancia desde el borde inferior */
+    right: 20px;        /* distancia desde el borde izquierdo */
+    z-index: 1000;     /* para que esté sobre otros elementos */
+}
+
+.icon img {
+    height: 200px;
+    animation: flotar 3s ease-in-out infinite;
+}
+
+@keyframes flotar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/*-----RESPONSIVE-----*/
+
+@media screen and (max-width: 600px){
+    body {
+        background: url(../imagenes/ffrankistain-movile.png) no-repeat center top fixed;
+        background-size: cover;
+        padding-bottom: 20px;
+    } 
+    .nave{
+        width: auto;
+    }
+    .nave ul{
+        gap: 2px;
+        text-align: center;
+    }
+    .nave ul li a{
+        padding: 5px 10px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .titulo h1{
+        font-size: 3rem; 
+    }
+    #cont{
+        display: block;
+        width: auto;
+    }
+    #cont .fecha{
+        width: 100%;
+    }
+    #cont .text{
+        width: 100%;
+    }
+    .protocolo{
+        width: auto;
+        margin: 20px;
+    }
+    #sec .text{
+        font-size: 1rem;
+    }
+    .icon img{
+        height: 200px; 
+    }
+    .icon{
+        bottom: 10px;
+        right: 10px;
+    }
+}

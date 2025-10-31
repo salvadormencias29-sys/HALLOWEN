@@ -1,0 +1,320 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-image: url(../imagenes/fondo-espanta.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.nave{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 5px;
+    height: auto;
+    font-family: "Bitcount Grid Single", system-ui;
+    width: 100%;
+}
+
+.nave span{
+    display: none;
+    margin-left: 5px;
+}
+
+.nave ul li a:hover span{
+    display: inline;
+}
+
+.nave ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding-left: 0;
+}
+
+.nave ul li a{
+    color: orangered;
+    text-decoration: none;
+    background-color: #080e08;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: 0.4s;
+    display: inline-block;
+    line-height: 30px;
+}
+
+.nave ul li a:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 30px #f8a121;
+    background-color: #f8a121;
+    color: black;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.titulo h1{
+    font-family: "Creepster", system-ui;
+    color: #f99d18;
+    font-size: 100px;
+    margin: 0;
+    text-shadow: 0 0 40px #000, 0 0 20px #f99d18;
+    z-index: 2;
+}
+
+.titulo h1 span{
+    color: orangered;
+}
+
+
+.text{
+    text-align: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6); /* negro translúcido para dejar ver el fondo */
+    border: 1px solid rgba(255, 255, 255, 0.15); /* borde suave y tenue */
+    border-radius: 20px;
+    padding: 25px;
+    margin: 50px auto;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05); /* brillo sutil */
+    backdrop-filter: blur(6px); /* 🌫 efecto vidrio esmerilado */
+    transition: all 0.4s ease;
+    width: 70%;
+    position: relative;
+}
+
+.text:hover{
+  transform: scale(1.03);
+  box-shadow: 0 0 30px rgb(250, 180, 59);
+  border: 4px solid rgb(250, 180, 59);
+}
+
+.text p{
+    font-family: "Ubuntu Mono", monospace;
+    color: white;
+    text-shadow: orangered;
+    font-size: 25px;
+    margin: 30px;
+}
+
+.cont{
+    background: rgba(0, 0, 0, 0.6); /* negro translúcido para dejar ver el fondo */
+    text-align: center;
+    align-items: center;
+    width: 70%;
+    position: relative;
+    border-radius: 20px;
+    padding: 25px;
+    margin: 50px auto;
+    box-shadow: 0 0 30px rgb(250, 180, 59);
+    transition: all 0.4s ease;
+}
+
+.cont:hover{
+  transform: scale(1.03);
+  box-shadow: 0 0 30px rgb(250, 180, 59);
+  border: 4px solid rgb(250, 180, 59);
+}
+
+.cont:hover .line #texto{
+    color: rgb(250, 180, 59);
+}
+
+.cont .line{
+    display: flex;
+    margin: 10px;
+}
+
+.cont .line #img{
+    width: 50%;
+}
+
+.cont .line #texto{
+    width: 50%;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+.cont .line #texto h1{
+    font-size: 2rem;
+    font-family: "Parkinsans", sans-serif;
+}
+
+.estado{
+    width: 70%;
+    position: relative;
+    border-radius: 20px;
+    padding: 25px;
+    margin: 50px auto;
+}
+
+#uno{
+    background-color: rgb(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    transition: all 0.4s ease;
+}
+
+#uno:hover{
+    background-color: pink;
+    opacity: 0.7;
+    transform: scale(1.03);
+    box-shadow: 0 0 30px pink;
+    border: 4px solid pink;
+}
+
+#uno:hover #parrafo h1{
+    color: white;
+}
+
+#uno #parrafo h1{
+    color: #f8a121;
+    text-transform: uppercase;
+    font-family: "Creepster", system-ui;
+}
+
+
+#dos{
+    background-color: rgb(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    transition: all 0.4s ease;
+}
+
+#dos:hover{
+    background-color: orangered;
+    opacity: 0.7;
+    transform: scale(1.03);
+    box-shadow: 0 0 30px orangered;
+    border: 4px solid orangered;
+}
+
+#dos:hover #parrafo h1{
+    color: black;
+}
+
+#dos #parrafo h1{
+    color: #f8a121;
+    text-transform: uppercase;
+    font-family: "Creepster", system-ui;
+}
+
+
+#tres{
+    background-color: rgb(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    transition: all 0.4s ease;
+}
+
+#tres:hover{
+    background-color: red;
+    opacity: 0.7;
+    transform: scale(1.03);
+    box-shadow: 0 0 30px red;
+    border: 4px solid red;
+}
+
+#tres:hover #parrafo h1{
+    color: black;
+}
+
+#tres #parrafo h1{
+    color: #f8a121;
+    text-transform: uppercase;
+    font-family: "Creepster", system-ui;
+}
+/* 💀 Efecto de palpitación o respiración para las imágenes con id="image" */
+.cont .line #img img {
+    animation: palpitar 2.5s ease-in-out infinite;
+    transform-origin: center;
+}
+
+/* Animación de palpitación */
+@keyframes palpitar {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+
+.icon {
+    position: fixed;   /* lo fija en la pantalla */
+    bottom: 10px;      /* distancia desde el borde inferior */
+    right: 10px;        /* distancia desde el borde izquierdo */
+    z-index: 100%;     /* para que esté sobre otros elementos */
+}
+
+.icon img {
+    height: 200px;
+    animation: flotar 3s ease-in-out infinite;
+}
+
+
+@keyframes flotar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/*-----RESPONSIVE-----*/
+
+@media screen and (max-width: 600px){
+    body{
+        background: url(../imagenes/fcalavaza-movile.png) no-repeat center top fixed;
+        background-size: cover;
+    }
+    .nave{
+        width: auto;
+    }
+    .nave ul{
+        gap: 2px;
+        text-align: center;
+    }
+    .nave ul li a{
+        padding: 5px 10px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .titulo h1{
+        font-size: 3rem; 
+    }
+    .text{
+        margin: 20px;
+        width: auto;
+    }
+    .text p{
+        font-size: 1rem;
+    }
+    .cont{
+        margin: 20px;
+        width: auto;
+    }
+    .cont .line #texto h1{
+        font-size: 1rem;
+    }
+    .cont .line #img img{
+        width: 40%;
+    }
+}

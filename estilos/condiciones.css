@@ -1,0 +1,220 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-image: url(../imagenes/fondo\ murcielago.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    
+}
+.nave{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    height: auto;
+    font-family: "Bitcount Grid Single", system-ui;
+}
+
+.nave span{
+    display: none;
+    margin-left: 5px;
+}
+
+.nave ul li a:hover span{
+    display: inline;
+}
+
+.nave ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nave ul li a{
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: 0.4s;
+    display: inline-block;
+    line-height: 30px;
+}
+
+.nave ul li a:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 30px #fcefb8;
+    background-color: #fcefb8;
+    color: black;
+}
+
+
+.titulo{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.titulo h1{
+    font-family: "Creepster", system-ui;
+    color: #fcefb8;
+    font-size: 100px;
+    margin: 0;
+    text-shadow: 0 0 40px #000, 0 0 20px #fcefb8;
+    z-index: 2;
+}
+
+
+.cont{
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6); /* negro translúcido para dejar ver el fondo */
+    border: 1px solid rgba(255, 255, 255, 0.15); /* borde suave y tenue */
+    border-radius: 20px;
+    padding: 25px;
+    margin: 50px auto;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05); /* brillo sutil */
+    backdrop-filter: blur(6px); /* 🌫 efecto vidrio esmerilado */
+    transition: all 0.4s ease;
+    width: 70%;
+    position: relative;
+}
+
+.cont:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+}
+
+.cont:hover .text .title{
+    color: #fcefb8;
+}
+.cont .img{
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    animation: flotar 3s ease-in-out infinite;
+}
+
+.cont .img img{
+    height: 250px;
+}
+
+
+@keyframes flotar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+
+
+.cont .text{
+    width: 60%;
+    text-align: center;
+}
+
+.cont .text p{
+    color: #eaeaea;
+    font-family: "Parkinsans", sans-serif;
+}
+
+.cont .text .title{
+    font-size: 40px;
+    color: #4e4c4c;
+    text-transform: uppercase;
+    font-family: "Creepster", system-ui;
+}
+
+.cont .img{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 20px;
+}
+
+.icon {
+    position: fixed;   /* lo fija en la pantalla */
+    bottom: 10px;      /* distancia desde el borde inferior */
+    right: 10px;        /* distancia desde el borde izquierdo */
+    z-index: 100%;     /* para que esté sobre otros elementos */
+}
+
+.icon img {
+    height: 200px;
+    animation: flotar 3s ease-in-out infinite;
+}
+
+@keyframes flotar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+@media screen and (max-width: 600px){
+    html, body{
+        overflow-x: hidden;
+    }
+    body{
+        background: url(../imagenes/fcondiciones-movile.png) no-repeat center top fixed;
+        background-size: cover;
+    }
+    .nave{
+        width: auto;
+    }
+    .nave ul{
+        gap: 2px;
+        text-align: center;
+        padding: 0;
+    }
+    .nave ul li a{
+        padding: 5px 10px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .titulo{
+        background-image: none;
+        width: auto;
+    }
+    
+    .titulo h1{
+        font-size: 80px; 
+    }
+    .titulo h1{
+        font-size: 80px; 
+    }
+    .icon img{
+        height: 200px; 
+    }
+    .icon{
+        bottom: 10px;
+        right: 10px;
+    }
+    .cont{
+        margin: 20px;
+        width: auto;
+    }
+    .cont .text p{
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+    .cont .text p.title{
+        font-size: 1.8rem;
+    }
+}
